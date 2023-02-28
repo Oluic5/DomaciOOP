@@ -5,26 +5,26 @@ import domaci.vozac;
 public class vozilo {
     private String tipVozila;
     private boolean registrovano;
-    private int portrosnja;
+    private int potrosnja;
     private vozac vlasnik;
 
     public vozilo() {
     }
 
-    public vozilo(String tipVozila, boolean registrovano, int portrosnja, vozac vlasnik) {
+    public vozilo(String tipVozila, boolean registrovano, int potrosnja, vozac vlasnik) {
         this.tipVozila = tipVozila;
         this.registrovano = registrovano;
-        this.portrosnja = portrosnja;
+        this.potrosnja = potrosnja;
         this.vlasnik = vlasnik;
     }
 
-    public int potrosnjaGoriva(int portrosnja, int kilometraza){
-        return (portrosnja/100)*kilometraza;
+    public int potrosnjaGoriva(int potrosnja, int kilometraza){
+        return (potrosnja/100)*kilometraza;
 
     }
     @Override
     public String toString(){
-        return "Tip vozila: "+tipVozila+", registrovan: "+registrovano+", Portrosnja: "+portrosnja+ ", Vlasnik: "+vlasnik;
+        return "Tip vozila: "+tipVozila+", registrovan: "+registrovano+", Portrosnja: "+potrosnja+ ", Vlasnik: "+vlasnik;
     }
 
     public String getTipVozila() {
@@ -43,12 +43,12 @@ public class vozilo {
         this.registrovano = registrovano;
     }
 
-    public int getPortrosnja() {
-        return portrosnja;
+    public int getPotrosnja() {
+        return potrosnja;
     }
 
-    public void setPortrosnja(int portrosnja) {
-        this.portrosnja = portrosnja;
+    public void setPotrosnja(int potrosnja) {
+        this.potrosnja = potrosnja;
     }
 
     public vozac getVlasnik() {
